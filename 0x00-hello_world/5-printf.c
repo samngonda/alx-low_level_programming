@@ -1,4 +1,3 @@
-vim 4-puts.c 
 #include <stdio.h> 
 /*
  *main - Printing 
