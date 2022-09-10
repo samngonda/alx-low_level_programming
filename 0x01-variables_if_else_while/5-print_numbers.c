@@ -6,10 +6,10 @@
  * this program prints "Programming is positive, zero, or negative
  * Return: 0
  */
- *int main(void)
+int main(void)
 {
 int n;
-for (n = 0; n < 10 n++)
+for (n = 0; n < 10; n++)
 {
 	printf("%n",n);
 }
