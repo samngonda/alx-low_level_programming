@@ -5,6 +5,5 @@
  * Return: void
  */
 
-
 int _atoi(char *s)
 {}
