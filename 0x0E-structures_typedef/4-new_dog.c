@@ -2,9 +2,9 @@
 #include "dog.h"
 
 /**
- *  _copy  -   Make a copy of passed in argument
- *  @src:      Data to make copy of
- *  Return:    Pointer
+ * _copy  -   Make a copy of passed in argument
+ * @src:      Data to make copy of
+ * Return:    Pointer
  */
 
 char *_copy(char *src)
