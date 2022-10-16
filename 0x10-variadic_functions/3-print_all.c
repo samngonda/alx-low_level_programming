@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include "variadic_functions.h"
 
-/**
+/ll.c**
  * print_c - print a char
  * @c: char to print
  *
@@ -12,6 +12,7 @@ void print_c(va_list c)
 {
 	printf("%c", va_arg(c, int));
 }
+
 /**
  * print_s - prints a string
  * @s: string to print
@@ -26,6 +27,7 @@ void print_s(va_list s)
 		str = "(nil)";
 	printf("%s", str);
 }
+
 /**
  * print_i - prints an int
  * @i: int to print
@@ -63,7 +65,7 @@ void print_all(const char * const format, ...)
 		{"i", print_i},
 		{"f", print_f},
 		{NULL, NULL}
-	}
+	};
 	va_list valist;
 	char *separator = "";
 
@@ -88,9 +90,3 @@ void print_all(const char * const format, ...)
 	va_end(valist);
 	printf("\n");
 }
-
-
-
-
-
-
