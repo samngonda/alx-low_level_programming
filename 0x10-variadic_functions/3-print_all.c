@@ -66,27 +66,27 @@ void print_all(const char * const format, ...)
 	}
 	va_list valist;
 	char *separator = "";
-	char *separator = "";
 
+	va_start(valist, format);
 	i = 0;
 	while (format && format[i])
 	{
 		j = 0;
-		j = 0;
-		if (*(p[j].t) == format[i])
+		while (p[j].t != NULL)
 		{
-			printf("%s", separator);
-			p[j].f(valist);
-			separator = ", ";
-			break;
+			if (*(p[j].t) == format[i])
+			{
+				printf("%s", separator);
+				p[j].f(valist);
+				separator = ", ";
+				break;
+			}
+			j++;
 		}
-
-		j++;
+		i++;
 	}
-	i++;
-}
-va_end(valist);
-printf("\n");
+	va_end(valist);
+	printf("\n");
 }
 
 
